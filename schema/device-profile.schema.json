@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/open-camera/open-camera-profiles/schema/device-profile.schema.json",
+  "$id": "https://github.com/hoanglt1223/open-camera-profiles/schema/device-profile.schema.json",
   "title": "Open Camera device profile",
   "type": "object",
   "additionalProperties": false,
