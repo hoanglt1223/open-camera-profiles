@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/find-x6",
+  "name": "OPPO Find X6",
+  "aliases": [
+    "OPPO Find X6"
+  ],
+  "year": 2023,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PGFM10"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 15.0,
+      "ratio": 0.6,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 24.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 65.0,
+      "ratio": 3.0,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi/xiaomi-civi-1s",
+  "name": "Xiaomi Civi 1s",
+  "aliases": [
+    "Xiaomi Civi 1s",
+    "Civi 1s"
+  ],
+  "year": 2022,
+  "match": {
+    "brand": "xiaomi",
+    "model": [
+      "Xiaomi Civi 1s",
+      "Civi 1s"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "runtimeFields": [
+        "equivFocalMm",
+        "ratio"
+      ]
+    },
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.mi.com/xiaomicivi1s/specs",
+      "https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/pro/js/product/xiaomicivi1s/specs.cbe53426.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

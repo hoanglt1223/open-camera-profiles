@@ -1,28 +1,223 @@
 {
   "schemaVersion": 1,
   "id": "xiaomi/gauguin",
+  "name": "Mi 10T Lite 5G / Redmi Note 9 Pro 5G (gauguin)",
+  "aliases": [
+    "Mi 10T Lite",
+    "Redmi Note 9 Pro 5G",
+    "Mi 10i",
+    "Mi 10T Lite 5G / Redmi Note 9 Pro 5G (gauguin)"
+  ],
+  "year": 2020,
   "match": {
     "brand": "xiaomi",
-    "device": ["gauguin"],
-    "model": ["M2007J17G"]
+    "device": [
+      "gauguin",
+      "gauguinpro"
+    ],
+    "model": [
+      "M2007J17G",
+      "M2007J17C",
+      "M2007J17I"
+    ]
   },
   "cameras": [
-    { "id": "0", "facing": "back", "role": "main", "focalMm": 5.43, "equivFocalMm": 25.4, "sensorMm": [7.3984, 5.5552], "pixelArray": [4624, 3472] },
-    { "id": "1", "facing": "front", "role": "front", "focalMm": 3.26, "equivFocalMm": 24.2, "sensorMm": [4.656, 3.496], "pixelArray": [2328, 1748] },
-    { "id": "2", "facing": "back", "role": "macro", "focalMm": 1.93, "equivFocalMm": 23.9, "sensorMm": [2.8, 2.1], "pixelArray": [1600, 1200], "hidden": true },
-    { "id": "3", "facing": "back", "role": "ultra", "focalMm": 1.65, "equivFocalMm": 15.6, "sensorMm": [3.6557, 2.7418], "pixelArray": [3264, 2448], "hidden": true },
-    { "id": "4", "facing": "back", "role": "depth", "focalMm": 1.933, "equivFocalMm": 23.9, "sensorMm": [2.8, 2.1], "pixelArray": [1600, 1200], "hidden": true },
-    { "id": "5", "facing": "back", "role": "logical", "physicalIds": ["0", "4"], "focalMm": 5.43, "equivFocalMm": 25.4, "sensorMm": [7.3984, 5.5552], "pixelArray": [4624, 3472], "hidden": true },
-    { "id": "6", "facing": "back", "role": "ultra", "focalMm": 1.65, "equivFocalMm": 15.6, "sensorMm": [3.6557, 2.7418], "pixelArray": [3264, 2448], "duplicateOf": "3", "hidden": true },
-    { "id": "7", "facing": "front", "role": "front", "focalMm": 3.26, "equivFocalMm": 24.2, "sensorMm": [4.656, 3.496], "pixelArray": [2328, 1748], "duplicateOf": "1", "hidden": true }
+    {
+      "id": "0",
+      "facing": "back",
+      "role": "main",
+      "focalMm": 5.43,
+      "equivFocalMm": 25.4,
+      "sensorMm": [
+        7.3984,
+        5.5552
+      ],
+      "pixelArray": [
+        4624,
+        3472
+      ]
+    },
+    {
+      "id": "1",
+      "facing": "front",
+      "role": "front",
+      "focalMm": 3.26,
+      "equivFocalMm": 24.2,
+      "sensorMm": [
+        4.656,
+        3.496
+      ],
+      "pixelArray": [
+        2328,
+        1748
+      ]
+    },
+    {
+      "id": "2",
+      "facing": "back",
+      "role": "macro",
+      "focalMm": 1.93,
+      "equivFocalMm": 23.9,
+      "sensorMm": [
+        2.8,
+        2.1
+      ],
+      "pixelArray": [
+        1600,
+        1200
+      ],
+      "hidden": true
+    },
+    {
+      "id": "3",
+      "facing": "back",
+      "role": "ultra",
+      "focalMm": 1.65,
+      "equivFocalMm": 15.6,
+      "sensorMm": [
+        3.6557,
+        2.7418
+      ],
+      "pixelArray": [
+        3264,
+        2448
+      ],
+      "hidden": true
+    },
+    {
+      "id": "4",
+      "facing": "back",
+      "role": "depth",
+      "focalMm": 1.933,
+      "equivFocalMm": 23.9,
+      "sensorMm": [
+        2.8,
+        2.1
+      ],
+      "pixelArray": [
+        1600,
+        1200
+      ],
+      "hidden": true
+    },
+    {
+      "id": "5",
+      "facing": "back",
+      "role": "logical",
+      "physicalIds": [
+        "0",
+        "4"
+      ],
+      "focalMm": 5.43,
+      "equivFocalMm": 25.4,
+      "sensorMm": [
+        7.3984,
+        5.5552
+      ],
+      "pixelArray": [
+        4624,
+        3472
+      ],
+      "hidden": true
+    },
+    {
+      "id": "6",
+      "facing": "back",
+      "role": "ultra",
+      "focalMm": 1.65,
+      "equivFocalMm": 15.6,
+      "sensorMm": [
+        3.6557,
+        2.7418
+      ],
+      "pixelArray": [
+        3264,
+        2448
+      ],
+      "duplicateOf": "3",
+      "hidden": true
+    },
+    {
+      "id": "7",
+      "facing": "front",
+      "role": "front",
+      "focalMm": 3.26,
+      "equivFocalMm": 24.2,
+      "sensorMm": [
+        4.656,
+        3.496
+      ],
+      "pixelArray": [
+        2328,
+        1748
+      ],
+      "duplicateOf": "1",
+      "hidden": true
+    }
   ],
   "zoomStops": [
-    { "ratio": 0.6, "cameraId": "3", "mode": "physical", "label": "0.6" },
-    { "ratio": 1, "cameraId": "0", "mode": "physical", "label": "1x" },
-    { "ratio": 2, "cameraId": "0", "mode": "crop", "label": "2" }
+    {
+      "ratio": 0.6,
+      "cameraId": "3",
+      "mode": "physical",
+      "label": "0.6"
+    },
+    {
+      "ratio": 1,
+      "cameraId": "0",
+      "mode": "physical",
+      "label": "1x"
+    },
+    {
+      "ratio": 2,
+      "cameraId": "0",
+      "mode": "crop",
+      "label": "2"
+    }
   ],
-  "quirks": ["DUPLICATE_CAMERA_ID", "ULTRAWIDE_DUP_ID"],
+  "lenses": [
+    {
+      "role": "ultra",
+      "runtimeFields": [
+        "equivFocalMm",
+        "ratio"
+      ]
+    },
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    },
+    {
+      "role": "macro",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    },
+    {
+      "role": "depth",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    }
+  ],
+  "quirks": [
+    "DUPLICATE_CAMERA_ID",
+    "HIDDEN_PHYSICAL_IDS",
+    "ULTRAWIDE_DUP_ID"
+  ],
+  "notes": "Ultrawide 8MP is exposed twice (id 3 and 6); 2MP macro and depth are auxiliaries. 2x is a crop of the 64MP main.",
   "knownBugs": [],
   "source": "verified",
-  "testedBuilds": ["lineage-24-20261107-UNOFFICIAL-gauguin (SDK 37)"]
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [],
+    "auditDate": "2026-11-09"
+  },
+  "testedBuilds": [
+    "lineage-24-20261107-UNOFFICIAL-gauguin (SDK 37)"
+  ]
 }

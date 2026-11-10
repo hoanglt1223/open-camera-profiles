@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi/xiaomi-13",
+  "name": "Xiaomi 13",
+  "aliases": [
+    "Xiaomi 13",
+    "13"
+  ],
+  "year": 2022,
+  "match": {
+    "brand": "xiaomi",
+    "model": [
+      "Xiaomi 13",
+      "13"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 15.0,
+      "ratio": 0.6,
+      "ratioOrigin": "official_ui_stop",
+      "source": "https://www.mi.com/uk/discover/article?id=3382"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 23.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.mi.com/xiaomi-13/specs"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 75.0,
+      "ratio": 3.2,
+      "ratioOrigin": "official_ui_stop",
+      "source": "https://www.mi.com/uk/discover/article?id=3382"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.mi.com/xiaomi-13/specs",
+      "https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/pro/js/product/xiaomi-13/specs.646410a7.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

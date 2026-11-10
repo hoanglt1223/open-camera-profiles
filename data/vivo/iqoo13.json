@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "vivo/iqoo13",
+  "name": "iQOO 13",
+  "aliases": [
+    "iQOO 13",
+    "iQOO 13 5G"
+  ],
+  "year": 2024,
+  "match": {
+    "brand": "vivo",
+    "model": [
+      "V2408A",
+      "V2408",
+      "I2401"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "runtimeFields": [
+        "equivFocalMm",
+        "ratio"
+      ]
+    },
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    },
+    {
+      "role": "tele",
+      "ratio": 2.0,
+      "ratioOrigin": "official_optical_zoom",
+      "runtimeFields": [
+        "equivFocalMm"
+      ],
+      "source": "https://www.iqoo.com/sa/en/products/param/iqoo-13"
+    }
+  ],
+  "notes": "50MP main (1/1.56\", OIS) + 50MP ultrawide (AF) + 50MP 2x telephoto (OIS). Published tele focal lengths disagree (50 mm vs 70 mm); filled from this phone's lens data.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.iqoo.com/sa/en/products/param/iqoo-13",
+      "https://www.gsmarena.com/vivo_iqoo_13-13462.php",
+      "https://true-tech.net/iqoo-13-imei-database-spotted/"
+    ],
+    "auditDate": "2026-11-10"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/reno12",
+  "name": "OPPO Reno12",
+  "aliases": [
+    "OPPO Reno12"
+  ],
+  "year": 2024,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PJV110"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 16.0,
+      "ratio": 0.6,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-reno/reno12/specs/"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 26.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-reno/reno12/specs/"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 47.0,
+      "ratio": 2.0,
+      "ratioOrigin": "display_convention",
+      "source": "https://www.oppo.com/cn/smartphones/series-reno/reno12/specs/"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-reno/reno12/specs/"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

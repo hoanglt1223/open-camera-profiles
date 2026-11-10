@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/k10",
+  "name": "OPPO K10",
+  "aliases": [
+    "OPPO K10"
+  ],
+  "year": 2022,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PGJM10"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "runtimeFields": [
+        "equivFocalMm",
+        "ratio"
+      ]
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 25.28,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-k/k10/specs/"
+    },
+    {
+      "role": "macro",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened. Dedicated macro and other auxiliary lenses are not ordinary zoom stops.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-k/k10/specs/"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

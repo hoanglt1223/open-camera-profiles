@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi/xiaomi-13-pro",
+  "name": "Xiaomi 13 Pro",
+  "aliases": [
+    "Xiaomi 13 Pro",
+    "13 Pro"
+  ],
+  "year": 2022,
+  "match": {
+    "brand": "xiaomi",
+    "model": [
+      "Xiaomi 13 Pro",
+      "13 Pro"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 14.0,
+      "ratio": 0.6,
+      "ratioOrigin": "derived",
+      "source": "https://www.mi.com/xiaomi-13-pro/specs"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 23.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.mi.com/xiaomi-13-pro/specs"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 75.0,
+      "ratio": 3.2,
+      "ratioOrigin": "official_ui_stop",
+      "source": "https://www.mi.com/global/discover/article?id=2830"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.mi.com/xiaomi-13-pro/specs",
+      "https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/pro/js/product/xiaomi-13-pro/specs.a44dd393.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

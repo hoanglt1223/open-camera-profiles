@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/a58x",
+  "name": "OPPO A58x",
+  "aliases": [
+    "OPPO A58x 5G",
+    "OPPO A58x"
+  ],
+  "year": 2022,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PHJ110"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-a/a58x/specs/"
+    ],
+    "auditDate": "2026-10-20",
+    "ambiguousCodes": [
+      "PHJ110"
+    ]
+  }
+}

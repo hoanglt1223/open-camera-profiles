@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi/xiaomi-18-pro-max",
+  "name": "Xiaomi 18 Pro Max",
+  "aliases": [
+    "Xiaomi 18 Pro Max",
+    "18 Pro Max"
+  ],
+  "year": 2026,
+  "match": {
+    "brand": "xiaomi",
+    "model": [
+      "Xiaomi 18 Pro Max",
+      "18 Pro Max"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 17.0,
+      "ratio": 0.7,
+      "ratioOrigin": "derived",
+      "source": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-18-pro-max/specs/index.html"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 23.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-18-pro-max/specs/index.html"
+    },
+    {
+      "role": "tele",
+      "ratio": 3.2,
+      "ratioOrigin": "official_optical_zoom",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-18-pro-max/specs/index.html",
+      "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-18-pro-max/specs/entry-1791460809618.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

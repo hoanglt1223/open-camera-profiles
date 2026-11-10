@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi/xiaomi-12-pro-dimensity",
+  "name": "Xiaomi 12 Pro Dimensity Edition",
+  "aliases": [
+    "Xiaomi 12 Pro Dimensity Edition",
+    "12 Pro Dimensity Edition"
+  ],
+  "year": 2022,
+  "match": {
+    "brand": "xiaomi",
+    "model": [
+      "Xiaomi 12 Pro Dimensity Edition",
+      "12 Pro Dimensity Edition"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 15.0,
+      "ratio": 0.6,
+      "ratioOrigin": "derived",
+      "source": "https://www.mi.com/mi12pro-dimensity/specs"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 24.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.mi.com/mi12pro-dimensity/specs"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.mi.com/mi12pro-dimensity/specs",
+      "https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/pro/js/product/mi12pro-dimensity/specs.b3e386d3.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

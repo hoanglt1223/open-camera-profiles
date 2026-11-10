@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "vivo/iqooneo11",
+  "name": "iQOO Neo 11",
+  "aliases": [
+    "iQOO Neo 11"
+  ],
+  "year": 2025,
+  "match": {
+    "brand": "vivo",
+    "model": [
+      "V2520A"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "runtimeFields": [
+        "equivFocalMm",
+        "ratio"
+      ]
+    },
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    }
+  ],
+  "notes": "50MP main (1/1.56\", f/1.88, OIS) + 8MP ultrawide (f/2.2, 119 deg). No telephoto. Focal lengths are not published; filled from this phone's lens data.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.iqoo.com/cn/",
+      "https://cloud.xameras.com/mobile/vivo/iqoo-neo11-china/specifications",
+      "https://deviceatlas.com/device-data/devices/iqoo/v2520a/90228082"
+    ],
+    "auditDate": "2026-11-10"
+  }
+}

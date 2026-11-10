@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/k13-turbo",
+  "name": "OPPO K13 Turbo",
+  "aliases": [
+    "OPPO K13 Turbo"
+  ],
+  "year": 2025,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PLM110"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "main",
+      "equivFocalMm": 27.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-k/k13-turbo/specs/"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-k/k13-turbo/specs/"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

@@ -12,3 +12,4 @@ jobs:
         python-version: '3.12'
     - run: pip install jsonschema
     - run: python tools/validate.py
+    - run: python -m py_compile tools/validate.py tools/import_leica_profiles.py

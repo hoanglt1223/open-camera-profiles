@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "redmi/redmi-note-11t-pro-plus",
+  "name": "REDMI Note 11t Pro+",
+  "aliases": [
+    "REDMI Note 11t Pro+"
+  ],
+  "year": 2022,
+  "match": {
+    "brand": "redmi",
+    "model": [
+      "REDMI Note 11t Pro+"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.mi.com/redminote11t-pro/specs",
+      "https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/pro/js/product/redminote11t-pro/specs.c5704f5e.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

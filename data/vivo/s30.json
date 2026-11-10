@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "vivo/s30",
+  "name": "vivo S30",
+  "aliases": [
+    "vivo S30"
+  ],
+  "year": 2025,
+  "match": {
+    "brand": "vivo",
+    "model": [
+      "V2464A"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "runtimeFields": [
+        "equivFocalMm",
+        "ratio"
+      ]
+    },
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    },
+    {
+      "role": "tele",
+      "runtimeFields": [
+        "equivFocalMm",
+        "ratio"
+      ]
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.vivo.com.cn/vivo/param/s30"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

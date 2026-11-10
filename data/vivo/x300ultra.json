@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "vivo/x300ultra",
+  "name": "vivo X300 Ultra",
+  "aliases": [
+    "vivo X300 Ultra"
+  ],
+  "year": 2026,
+  "match": {
+    "brand": "vivo",
+    "model": [
+      "V2547A",
+      "V2547DA"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 14.0,
+      "ratio": 0.6,
+      "ratioOrigin": "derived",
+      "source": "https://www.vivo.com.cn/vivo/param/x300ultra"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 35.0,
+      "ratio": 1.5,
+      "ratioOrigin": "official_optical_reference",
+      "source": "https://www.vivo.com.cn/vivo/param/x300ultra"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 85.0,
+      "ratio": 3.7,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://www.vivo.com.cn/vivo/param/x300ultra"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.vivo.com.cn/vivo/param/x300ultra"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

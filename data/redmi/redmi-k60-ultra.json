@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "redmi/redmi-k60-ultra",
+  "name": "REDMI K60 Ultra",
+  "aliases": [
+    "REDMI K60 Ultra"
+  ],
+  "year": 2023,
+  "match": {
+    "brand": "redmi",
+    "model": [
+      "REDMI K60 Ultra"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "runtimeFields": [
+        "equivFocalMm",
+        "ratio"
+      ]
+    },
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.mi.com/redmi-k60ultra/specs",
+      "https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/pro/js/product/redmi-k60ultra/specs.9b2d8de0.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

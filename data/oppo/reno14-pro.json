@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/reno14-pro",
+  "name": "OPPO Reno14 Pro",
+  "aliases": [
+    "OPPO Reno14 Pro"
+  ],
+  "year": 2025,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PKZ110"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 16.0,
+      "ratio": 0.7,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-reno/reno14-pro/specs/"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 24.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-reno/reno14-pro/specs/"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 80.0,
+      "ratio": 3.5,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://www.oppo.com/cn/smartphones/series-reno/reno14-pro/specs/"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-reno/reno14-pro/specs/"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

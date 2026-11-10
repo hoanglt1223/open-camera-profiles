@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "vivo/x300pro",
+  "name": "vivo X300 Pro",
+  "aliases": [
+    "vivo X300 Pro"
+  ],
+  "year": 2025,
+  "match": {
+    "brand": "vivo",
+    "model": [
+      "V2502A",
+      "V2502DA"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 15.0,
+      "runtimeFields": [
+        "ratio"
+      ],
+      "source": "https://www.vivo.com.cn/vivo/x300pro"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 24.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.vivo.com.cn/vivo/x300pro"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 85.0,
+      "ratio": 3.5,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://www.vivo.com.cn/vivo/x300pro"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.vivo.com.cn/vivo/param/x300pro"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

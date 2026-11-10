@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi/xiaomi-14",
+  "name": "Xiaomi 14",
+  "aliases": [
+    "Xiaomi 14",
+    "14"
+  ],
+  "year": 2023,
+  "match": {
+    "brand": "xiaomi",
+    "model": [
+      "Xiaomi 14",
+      "14"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 14.0,
+      "ratio": 0.6,
+      "ratioOrigin": "derived",
+      "source": "https://www.mi.com/xiaomi-14/specs"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 23.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.mi.com/xiaomi-14/specs"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 75.0,
+      "ratio": 3.2,
+      "ratioOrigin": "official_ui_stop",
+      "source": "https://www.mi.com/global/product/xiaomi-14/"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.mi.com/xiaomi-14/specs",
+      "https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/pro/js/product/xiaomi-14/specs.73fbc3b2.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

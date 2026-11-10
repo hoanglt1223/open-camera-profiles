@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi/xiaomi-civi-4-pro",
+  "name": "Xiaomi Civi 4 Pro",
+  "aliases": [
+    "Xiaomi Civi 4 Pro",
+    "Civi 4 Pro"
+  ],
+  "year": 2024,
+  "match": {
+    "brand": "xiaomi",
+    "model": [
+      "Xiaomi Civi 4 Pro",
+      "Civi 4 Pro"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "runtimeFields": [
+        "equivFocalMm",
+        "ratio"
+      ]
+    },
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 50,
+      "ratio": 2.0,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-civi-4-pro/specs/index.html"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-civi-4-pro/specs/index.html",
+      "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-civi-4-pro/specs/entry-1772437774389.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

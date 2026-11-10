@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/find-x9s-pro",
+  "name": "OPPO Find X9s Pro",
+  "aliases": [
+    "OPPO Find X9s Pro"
+  ],
+  "year": 2026,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PME110"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 15.0,
+      "ratio": 0.7,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x9s-pro/specs/"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 23.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x9s-pro/specs/"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 65.0,
+      "ratio": 2.8,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x9s-pro/specs/"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-find-x/find-x9s-pro/specs/"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

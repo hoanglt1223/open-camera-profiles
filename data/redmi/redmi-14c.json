@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "redmi/redmi-14c",
+  "name": "REDMI 14c",
+  "aliases": [
+    "REDMI 14c"
+  ],
+  "year": 2024,
+  "match": {
+    "brand": "redmi",
+    "model": [
+      "REDMI 14c"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/redmi-14c/specs/index.html",
+      "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-14c/specs/entry-1747278616579.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi/xiaomi-12s-ultra",
+  "name": "Xiaomi 12S Ultra",
+  "aliases": [
+    "Xiaomi 12S Ultra",
+    "12S Ultra"
+  ],
+  "year": 2022,
+  "match": {
+    "brand": "xiaomi",
+    "model": [
+      "Xiaomi 12S Ultra",
+      "12S Ultra"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 13.0,
+      "ratio": 0.6,
+      "ratioOrigin": "derived",
+      "source": "https://www.mi.com/mi12s-ultra/specs"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 23.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.mi.com/mi12s-ultra/specs"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 120.0,
+      "ratio": 5.0,
+      "ratioOrigin": "display_convention",
+      "source": "https://www.mi.com/mi12s-ultra/specs"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.mi.com/mi12s-ultra/specs",
+      "https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/pro/js/product/mi12s-ultra/specs.ff83ea12.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "vivo/x500",
+  "name": "vivo X500",
+  "aliases": [
+    "vivo X500"
+  ],
+  "year": 2026,
+  "match": {
+    "brand": "vivo",
+    "model": [
+      "V2609A"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 15.0,
+      "runtimeFields": [
+        "ratio"
+      ],
+      "source": "https://www.vivo.com.cn/vivo/x500"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 23.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.vivo.com.cn/vivo/x500"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 72.0,
+      "ratio": 3.1,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://www.vivo.com.cn/vivo/x500"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.vivo.com.cn/vivo/param/x500"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

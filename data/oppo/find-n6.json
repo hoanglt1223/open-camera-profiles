@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/find-n6",
+  "name": "OPPO Find N6",
+  "aliases": [
+    "OPPO Find N6"
+  ],
+  "year": 2026,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PLP110"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 15.0,
+      "ratio": 0.7,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-n/find-n6/specs/"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 23.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-n/find-n6/specs/"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 70.0,
+      "ratio": 3.0,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-n/find-n6/specs/"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-find-n/find-n6/specs/"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

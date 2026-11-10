@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/find-x8-ultra",
+  "name": "OPPO Find X8 Ultra",
+  "aliases": [
+    "OPPO Find X8 Ultra"
+  ],
+  "year": 2025,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PKJ110"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 15.0,
+      "ratio": 0.6,
+      "ratioOrigin": "display_convention",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 23.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 70.0,
+      "ratio": 3.0,
+      "ratioOrigin": "official_ui_stop",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 135.0,
+      "ratio": 6.0,
+      "ratioOrigin": "official_ui_stop",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

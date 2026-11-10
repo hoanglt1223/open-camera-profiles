@@ -4,22 +4,74 @@
   "title": "Open Camera device profile",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "id", "match", "cameras", "zoomStops", "source"],
+  "required": [
+    "schemaVersion",
+    "id",
+    "match",
+    "source"
+  ],
   "properties": {
-    "schemaVersion": { "const": 1 },
-    "id": { "type": "string", "pattern": "^[a-z0-9]+/[a-z0-9_]+$" },
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+/[a-z0-9_-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Marketing name in English"
+    },
+    "aliases": {
+      "$ref": "#/$defs/stringList",
+      "description": "Other marketing names"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 2010,
+      "maximum": 2100
+    },
     "match": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["brand"],
-      "anyOf": [{ "required": ["device"] }, { "required": ["model"] }],
+      "required": [
+        "brand"
+      ],
+      "anyOf": [
+        {
+          "required": [
+            "device"
+          ]
+        },
+        {
+          "required": [
+            "model"
+          ]
+        }
+      ],
       "properties": {
-        "brand": { "type": "string", "minLength": 1 },
-        "device": { "$ref": "#/$defs/stringList" },
-        "model": { "$ref": "#/$defs/stringList" },
-        "fingerprintPrefix": { "$ref": "#/$defs/stringList" },
-        "minSdk": { "type": "integer", "minimum": 26 },
-        "maxSdk": { "type": "integer", "minimum": 26 }
+        "brand": {
+          "type": "string",
+          "minLength": 1
+        },
+        "device": {
+          "$ref": "#/$defs/stringList"
+        },
+        "model": {
+          "$ref": "#/$defs/stringList"
+        },
+        "fingerprintPrefix": {
+          "$ref": "#/$defs/stringList"
+        },
+        "minSdk": {
+          "type": "integer",
+          "minimum": 26
+        },
+        "maxSdk": {
+          "type": "integer",
+          "minimum": 26
+        }
       }
     },
     "cameras": {
@@ -28,40 +80,94 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "facing", "role", "focalMm", "equivFocalMm", "sensorMm"],
+        "required": [
+          "id",
+          "facing",
+          "role",
+          "focalMm",
+          "equivFocalMm",
+          "sensorMm"
+        ],
         "properties": {
-          "id": { "type": "string", "pattern": "^[0-9]+$" },
-          "facing": { "enum": ["back", "front", "external"] },
-          "role": {
-            "enum": ["main", "ultra", "tele", "macro", "depth", "mono", "front", "front-ultra", "logical"]
+          "id": {
+            "type": "string",
+            "pattern": "^[0-9]+$"
           },
-          "physicalIds": { "$ref": "#/$defs/stringList" },
-          "focalMm": { "type": "number", "exclusiveMinimum": 0 },
-          "equivFocalMm": { "type": "number", "exclusiveMinimum": 0 },
+          "facing": {
+            "enum": [
+              "back",
+              "front",
+              "external"
+            ]
+          },
+          "role": {
+            "enum": [
+              "main",
+              "ultra",
+              "tele",
+              "macro",
+              "depth",
+              "mono",
+              "front",
+              "front-ultra",
+              "logical"
+            ]
+          },
+          "physicalIds": {
+            "$ref": "#/$defs/stringList"
+          },
+          "focalMm": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "equivFocalMm": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
           "sensorMm": {
             "type": "array",
-            "items": { "type": "number", "exclusiveMinimum": 0 },
+            "items": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
             "minItems": 2,
             "maxItems": 2
           },
           "pixelArray": {
             "type": "array",
-            "items": { "type": "integer", "minimum": 1 },
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
             "minItems": 2,
             "maxItems": 2
           },
-          "duplicateOf": { "type": "string", "pattern": "^[0-9]+$" },
-          "hidden": { "type": "boolean" },
+          "duplicateOf": {
+            "type": "string",
+            "pattern": "^[0-9]+$"
+          },
+          "hidden": {
+            "type": "boolean"
+          },
           "preferredSizes": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "photo": { "$ref": "#/$defs/size" },
-              "video": { "$ref": "#/$defs/size" },
-              "raw": { "$ref": "#/$defs/size" }
+              "photo": {
+                "$ref": "#/$defs/size"
+              },
+              "video": {
+                "$ref": "#/$defs/size"
+              },
+              "raw": {
+                "$ref": "#/$defs/size"
+              }
             }
           },
-          "maxFps": { "type": "integer", "minimum": 1 }
+          "maxFps": {
+            "type": "integer",
+            "minimum": 1
+          }
         }
       }
     },
@@ -71,12 +177,101 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["ratio", "cameraId", "mode", "label"],
+        "required": [
+          "ratio",
+          "cameraId",
+          "mode",
+          "label"
+        ],
         "properties": {
-          "ratio": { "type": "number", "exclusiveMinimum": 0 },
-          "cameraId": { "type": "string", "pattern": "^[0-9]+$" },
-          "mode": { "enum": ["physical", "crop", "logical"] },
-          "label": { "type": "string", "minLength": 1, "maxLength": 6 }
+          "ratio": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "cameraId": {
+            "type": "string",
+            "pattern": "^[0-9]+$"
+          },
+          "mode": {
+            "enum": [
+              "physical",
+              "crop",
+              "logical"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 6
+          }
+        }
+      }
+    },
+    "lenses": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Rear lenses as published by the manufacturer. Values the spec pages do not publish are named in runtimeFields and come from Camera2 metadata at runtime.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "main",
+              "ultra",
+              "tele",
+              "macro",
+              "depth",
+              "mono"
+            ]
+          },
+          "equivFocalMm": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "description": "35 mm equivalent focal length"
+          },
+          "maxEquivFocalMm": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "description": "Upper end of a continuous (zoom) tele"
+          },
+          "ratio": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "description": "Zoom stop relative to main"
+          },
+          "maxRatio": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "ratioOrigin": {
+            "enum": [
+              "derived",
+              "official_optical_zoom",
+              "official_ui_stop",
+              "display_convention",
+              "official_optical_reference",
+              "official_continuous_zoom"
+            ],
+            "description": "derived = equivFocalMm / main equivFocalMm; official_* = printed by the manufacturer"
+          },
+          "runtimeFields": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "equivFocalMm",
+                "ratio"
+              ]
+            }
+          },
+          "source": {
+            "type": "string",
+            "pattern": "^https?://"
+          }
         }
       }
     },
@@ -90,20 +285,89 @@
           "NO_ZSL",
           "JPEG_ORIENTATION_WRONG",
           "HDR_VIDEO_BROKEN",
-          "RAW_BLACK_LEVEL_WRONG"
+          "RAW_BLACK_LEVEL_WRONG",
+          "HIDDEN_PHYSICAL_IDS",
+          "USE_LOGICAL_ZOOM"
         ]
-      }
+      },
+      "description": "ULTRAWIDE_DUP_ID / DUPLICATE_CAMERA_ID: one sensor under several ids, stops use the lowest id. HIDDEN_PHYSICAL_IDS: lenses are not listed by getCameraIdList(); the app probes ids 0-15 with getCameraCharacteristics and only shows stops it can open. USE_LOGICAL_ZOOM: drive every stop through the listed logical camera's zoom ratio (CONTROL_ZOOM_RATIO) instead of switching camera ids. NO_ZSL, JPEG_ORIENTATION_WRONG, HDR_VIDEO_BROKEN, RAW_BLACK_LEVEL_WRONG: capture fixes owned by the capture layer."
     },
     "vendorTags": {
       "type": "object",
-      "additionalProperties": { "type": "string" }
+      "additionalProperties": {
+        "type": "string"
+      }
     },
-    "knownBugs": { "$ref": "#/$defs/stringList" },
-    "source": { "enum": ["auto", "community", "verified"] },
-    "testedBuilds": { "$ref": "#/$defs/stringList" }
+    "knownBugs": {
+      "$ref": "#/$defs/stringList"
+    },
+    "source": {
+      "enum": [
+        "auto",
+        "community",
+        "verified"
+      ]
+    },
+    "testedBuilds": {
+      "$ref": "#/$defs/stringList"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "importedFrom"
+      ],
+      "properties": {
+        "importedFrom": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^https?://"
+          }
+        },
+        "auditDate": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "ambiguousCodes": {
+          "$ref": "#/$defs/stringList",
+          "description": "Model codes shared with other profiles"
+        }
+      }
+    }
   },
   "$defs": {
-    "stringList": { "type": "array", "items": { "type": "string", "minLength": 1 } },
-    "size": { "type": "string", "pattern": "^[0-9]+x[0-9]+$" }
-  }
+    "stringList": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "size": {
+      "type": "string",
+      "pattern": "^[0-9]+x[0-9]+$"
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "cameras",
+        "zoomStops"
+      ]
+    },
+    {
+      "required": [
+        "lenses"
+      ]
+    }
+  ],
+  "description": "A profile is either measured (cameras + zoomStops, from Camera2 on the phone) or a spec catalog entry (lenses, from public spec pages). The app merges a catalog entry with the profile it generates on first launch; see README 'Runtime merge'."
 }

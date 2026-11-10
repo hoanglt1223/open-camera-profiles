@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi/xiaomi-17-ultra",
+  "name": "Xiaomi 17 Ultra",
+  "aliases": [
+    "Xiaomi 17 Ultra",
+    "17 Ultra"
+  ],
+  "year": 2025,
+  "match": {
+    "brand": "xiaomi",
+    "model": [
+      "Xiaomi 17 Ultra",
+      "17 Ultra"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 14,
+      "ratio": 0.6,
+      "ratioOrigin": "derived",
+      "source": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-17-ultra/specs/index.html"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 23,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-17-ultra/specs/index.html"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 75,
+      "maxEquivFocalMm": 100,
+      "ratio": 3.2,
+      "maxRatio": 4.3,
+      "ratioOrigin": "official_continuous_zoom",
+      "source": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-17-ultra/specs/index.html"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-17-ultra/specs/index.html",
+      "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-ultra/specs/entry-1782897917179.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

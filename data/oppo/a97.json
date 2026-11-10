@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/a97",
+  "name": "OPPO A97",
+  "aliases": [
+    "OPPO A97 5G",
+    "OPPO A97"
+  ],
+  "year": 2022,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PFTM10"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-a/a97/specs/"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

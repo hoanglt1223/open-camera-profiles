@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "vivo/x300",
+  "name": "vivo X300",
+  "aliases": [
+    "vivo X300"
+  ],
+  "year": 2025,
+  "match": {
+    "brand": "vivo",
+    "model": [
+      "V2509A"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 15.0,
+      "runtimeFields": [
+        "ratio"
+      ],
+      "source": "https://www.vivo.com.cn/vivo/x300"
+    },
+    {
+      "role": "main",
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "runtimeFields": [
+        "equivFocalMm"
+      ]
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 70.0,
+      "ratio": 3.0,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://www.vivo.com.cn/vivo/x300"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.vivo.com.cn/vivo/param/x300"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

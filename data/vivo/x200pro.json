@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "vivo/x200pro",
+  "name": "vivo X200 Pro",
+  "aliases": [
+    "vivo X200 Pro"
+  ],
+  "year": 2024,
+  "match": {
+    "brand": "vivo",
+    "model": [
+      "V2405A",
+      "V2405DA"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 15.0,
+      "runtimeFields": [
+        "ratio"
+      ],
+      "source": "https://www.vivo.com.cn/vivo/x200pro"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 23.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.vivo.com.cn/vivo/x200pro"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 85.0,
+      "ratio": 3.7,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://www.vivo.com.cn/vivo/x200pro"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.vivo.com.cn/vivo/param/x200pro"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

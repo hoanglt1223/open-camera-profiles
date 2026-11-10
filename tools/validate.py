@@ -70,8 +70,29 @@ def semantic_errors(profile, rel_path, in_data):
     ratios = [s.get("ratio", 0) for s in stops]
     if any(b <= a for a, b in zip(ratios, ratios[1:])):
         errors.append(f"zoomStops ratios must be strictly increasing: {ratios}")
-    if ratios.count(1) != 1:
+    if stops and ratios.count(1) != 1:
         errors.append("exactly one zoom stop must have ratio 1")
+    if "quirks" in profile and "USE_LOGICAL_ZOOM" in profile["quirks"] and cameras and \
+            not any(c.get("role") == "logical" for c in cameras):
+        errors.append("USE_LOGICAL_ZOOM needs a logical camera")
+
+    lenses = profile.get("lenses", [])
+    if lenses and [l.get("role") for l in lenses].count("main") != 1:
+        errors.append("lenses must contain exactly one main lens")
+    # The main ratio is 1 unless the maker labels it otherwise (vivo X300 Ultra: 35 mm main shown as 1.5x).
+    main_ratio = next((l.get("ratio", 1) for l in lenses if l.get("role") == "main"), 1)
+    for lens in lenses:
+        ratio, role = lens.get("ratio"), lens.get("role")
+        if ratio is None:
+            continue
+        if (role == "main" and ratio != 1 and lens.get("ratioOrigin", "derived") == "derived") or \
+                (role == "ultra" and ratio >= main_ratio) or (role == "tele" and ratio <= main_ratio):
+            errors.append(f"lens {role}: ratio {ratio} does not fit the role")
+        if "ratio" in lens.get("runtimeFields", []):
+            errors.append(f"lens {role}: ratio is both set and listed in runtimeFields")
+    lens_ratios = sorted(l["ratio"] for l in lenses if l.get("ratio") and l.get("role") in ZOOM_ROLES)
+    if len(set(lens_ratios)) != len(lens_ratios):
+        errors.append(f"lens ratios must be distinct: {lens_ratios}")
     for stop in stops:
         cam = by_id.get(stop.get("cameraId"))
         if cam is None:
@@ -87,6 +108,8 @@ def semantic_errors(profile, rel_path, in_data):
             errors.append(f"zoom stop {stop.get('label')}: crop stops must use the main camera")
 
     for path, key, value in walk(profile):
+        if ".provenance" in path:
+            continue
         if PII_KEYS.search(key):
             errors.append(f"{path}: field name suggests personal data")
         if isinstance(value, str):

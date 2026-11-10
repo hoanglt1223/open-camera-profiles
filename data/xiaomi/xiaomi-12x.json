@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi/xiaomi-12x",
+  "name": "Xiaomi 12X",
+  "aliases": [
+    "Xiaomi 12X",
+    "12X"
+  ],
+  "year": 2022,
+  "match": {
+    "brand": "xiaomi",
+    "model": [
+      "Xiaomi 12X",
+      "12X"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 12.0,
+      "ratio": 0.5,
+      "ratioOrigin": "derived",
+      "source": "https://www.mi.com/mi12x/specs"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 24.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.mi.com/mi12x/specs"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.mi.com/mi12x/specs",
+      "https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/pro/js/product/mi12x/specs.987077c7.js"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

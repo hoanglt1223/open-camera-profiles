@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/find-x5-pro",
+  "name": "OPPO Find X5 Pro",
+  "aliases": [
+    "OPPO Find X5 Pro"
+  ],
+  "year": 2022,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PFEM10"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "runtimeFields": [
+        "equivFocalMm",
+        "ratio"
+      ]
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 25.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x5-pro/specs/"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 52.0,
+      "ratio": 2.0,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x5-pro/specs/"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-find-x/find-x5-pro/specs/"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}

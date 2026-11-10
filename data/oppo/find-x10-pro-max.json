@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "oppo/find-x10-pro-max",
+  "name": "OPPO Find X10 Pro Max",
+  "aliases": [
+    "OPPO Find X10 Pro Max"
+  ],
+  "year": 2026,
+  "match": {
+    "brand": "oppo",
+    "model": [
+      "PMX110"
+    ]
+  },
+  "lenses": [
+    {
+      "role": "ultra",
+      "equivFocalMm": 13.0,
+      "ratio": 0.5,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x10-pro-max/specs/"
+    },
+    {
+      "role": "main",
+      "equivFocalMm": 24.0,
+      "ratio": 1,
+      "ratioOrigin": "derived",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x10-pro-max/specs/"
+    },
+    {
+      "role": "tele",
+      "equivFocalMm": 70.0,
+      "ratio": 3.0,
+      "ratioOrigin": "official_optical_zoom",
+      "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x10-pro-max/specs/"
+    }
+  ],
+  "notes": "Fixed zoom stops follow the manufacturer's published labels; focal lengths or ratios that are not reliably published are filled from this phone's lens metadata. Readable metadata alone does not mean the camera can be opened.",
+  "source": "community",
+  "provenance": {
+    "importedFrom": "Leica camera port device catalog",
+    "sources": [
+      "https://www.oppo.com/cn/smartphones/series-find-x/find-x10-pro-max/specs/"
+    ],
+    "auditDate": "2026-10-20"
+  }
+}
