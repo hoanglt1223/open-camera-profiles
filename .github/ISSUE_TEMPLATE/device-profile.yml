@@ -1,0 +1,29 @@
+name: Device profile
+description: Submit or correct a device profile exported from Open Camera
+labels: [device-profile]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Device (brand, model, codename)
+      placeholder: Xiaomi Mi 10T Lite, M2007J17G, gauguin
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: ROM and Android version
+    validations:
+      required: true
+  - type: textarea
+    id: profile
+    attributes:
+      label: Exported profile JSON
+      description: Settings > Export device profile. It contains no serial numbers, IMEI or location.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: What is wrong or was checked (zoom stops, lenses that do not open, ...)

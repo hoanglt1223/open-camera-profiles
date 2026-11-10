@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/open-camera/open-camera-profiles/schema/device-profile.schema.json",
+  "title": "Open Camera device profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "match", "cameras", "zoomStops", "source"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+/[a-z0-9_]+$" },
+    "match": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["brand"],
+      "anyOf": [{ "required": ["device"] }, { "required": ["model"] }],
+      "properties": {
+        "brand": { "type": "string", "minLength": 1 },
+        "device": { "$ref": "#/$defs/stringList" },
+        "model": { "$ref": "#/$defs/stringList" },
+        "fingerprintPrefix": { "$ref": "#/$defs/stringList" },
+        "minSdk": { "type": "integer", "minimum": 26 },
+        "maxSdk": { "type": "integer", "minimum": 26 }
+      }
+    },
+    "cameras": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "facing", "role", "focalMm", "equivFocalMm", "sensorMm"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[0-9]+$" },
+          "facing": { "enum": ["back", "front", "external"] },
+          "role": {
+            "enum": ["main", "ultra", "tele", "macro", "depth", "mono", "front", "front-ultra", "logical"]
+          },
+          "physicalIds": { "$ref": "#/$defs/stringList" },
+          "focalMm": { "type": "number", "exclusiveMinimum": 0 },
+          "equivFocalMm": { "type": "number", "exclusiveMinimum": 0 },
+          "sensorMm": {
+            "type": "array",
+            "items": { "type": "number", "exclusiveMinimum": 0 },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "pixelArray": {
+            "type": "array",
+            "items": { "type": "integer", "minimum": 1 },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "duplicateOf": { "type": "string", "pattern": "^[0-9]+$" },
+          "hidden": { "type": "boolean" },
+          "preferredSizes": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "photo": { "$ref": "#/$defs/size" },
+              "video": { "$ref": "#/$defs/size" },
+              "raw": { "$ref": "#/$defs/size" }
+            }
+          },
+          "maxFps": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "zoomStops": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["ratio", "cameraId", "mode", "label"],
+        "properties": {
+          "ratio": { "type": "number", "exclusiveMinimum": 0 },
+          "cameraId": { "type": "string", "pattern": "^[0-9]+$" },
+          "mode": { "enum": ["physical", "crop", "logical"] },
+          "label": { "type": "string", "minLength": 1, "maxLength": 6 }
+        }
+      }
+    },
+    "quirks": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "ULTRAWIDE_DUP_ID",
+          "DUPLICATE_CAMERA_ID",
+          "NO_ZSL",
+          "JPEG_ORIENTATION_WRONG",
+          "HDR_VIDEO_BROKEN",
+          "RAW_BLACK_LEVEL_WRONG"
+        ]
+      }
+    },
+    "vendorTags": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "knownBugs": { "$ref": "#/$defs/stringList" },
+    "source": { "enum": ["auto", "community", "verified"] },
+    "testedBuilds": { "$ref": "#/$defs/stringList" }
+  },
+  "$defs": {
+    "stringList": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "size": { "type": "string", "pattern": "^[0-9]+x[0-9]+$" }
+  }
+}
